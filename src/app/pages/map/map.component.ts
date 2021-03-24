@@ -50,8 +50,7 @@ export class MapComponent implements OnInit {
         .subscribe(centersFiltered => {
           this.filteredCenters = centersFiltered;
         });
-    }
-    else {
+    } else {
       // show using default location
       this.showFilteredCenters();
       // ask the user for location, if the user allows, we will filter again based in that location and re center the map
