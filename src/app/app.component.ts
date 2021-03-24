@@ -15,7 +15,8 @@ export class AppComponent implements OnInit {
   ) {
     translate.addLangs(['en', 'es']);
     translate.setDefaultLang('es');
-    const browserLang = translate.getBrowserLang();
+    // TODO: enable when multilanguaje is supported
+    // const browserLang = translate.getBrowserLang();
     // translate.use(browserLang.match(/es|en/) ? browserLang : 'en');
     translate.use('es');
   }

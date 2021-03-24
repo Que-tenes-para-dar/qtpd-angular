@@ -1,6 +1,13 @@
 import { DonationType } from './donation-type';
 import { CenterTypeEnum } from './enums';
 
+export class LocationLatLng {
+    constructor(
+        public latitude: number = -34.9050033,
+        public longitude: number = -56.1373682
+    ) { }
+}
+
 export class Center {
     constructor(
         public apartmentNumber = '',
@@ -18,12 +25,5 @@ export class Center {
         public workingHours = '',
         public zipCode: number = 0,
         public _id = ''
-    ) { }
-}
-
-export class LocationLatLng {
-    constructor(
-        public latitude: number = -34.9050033,
-        public longitude: number = -56.1373682
     ) { }
 }
